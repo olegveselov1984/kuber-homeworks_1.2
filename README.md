@@ -27,29 +27,9 @@
 2. Использовать image - gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
 3. Подключиться локально к Pod с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 
+<img width="801" height="499" alt="image" src="https://github.com/user-attachments/assets/6150051e-2d8e-435c-8eb5-b01a684d298c" />
 
-  apiVersion: v1  
-kind: Pod  
-metadata:  
-  labels:
-    app: myapp
-  name: hello-world
-  namespace: default
-spec:
-  containers:
-  - name: hello-world
-    image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2
-    imagePullPolicy: IfNotPresent
-    ports:
-    - containerPort: 8080
-   
-ubuntu@ubuntu:~/src/kuber/1.2/kuber-homeworks_1.2$ kubectl port-forward hello-world 8080:8080
-Forwarding from 127.0.0.1:8080 -> 8080
-Forwarding from [::1]:8080 -> 8080
-Handling connection for 8080
   
-
-
 <img width="752" height="847" alt="image" src="https://github.com/user-attachments/assets/9795bf47-5900-468c-8826-9c51207c697b" />
 
 
