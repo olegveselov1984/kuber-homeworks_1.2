@@ -45,6 +45,17 @@
 3. Создать Service с именем netology-svc и подключить к netology-web.
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 
+
+<img width="775" height="303" alt="image" src="https://github.com/user-attachments/assets/ea87cc07-a4de-48f9-8bf1-8f5d33ce6ab5" />
+
+<img width="770" height="530" alt="image" src="https://github.com/user-attachments/assets/d27c22a1-d963-41f1-b644-6000e9a952da" />
+
+<img width="756" height="838" alt="image" src="https://github.com/user-attachments/assets/d704bfab-7e06-43b1-a456-1cf9222cd001" />
+
+<img width="650" height="117" alt="image" src="https://github.com/user-attachments/assets/196604e8-a045-49be-80d0-ba13c39b440b" />
+
+
+
 ------
 
 ### Правила приёма работы
