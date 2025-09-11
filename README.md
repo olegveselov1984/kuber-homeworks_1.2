@@ -28,9 +28,9 @@
 3. Подключиться локально к Pod с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 
 
-  apiVersion: v1
-kind: Pod
-metadata:
+  apiVersion: v1  
+kind: Pod  
+metadata:  
   labels:
     app: myapp
   name: hello-world
