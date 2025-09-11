@@ -1,2 +1,72 @@
-# kuber-homeworks_1.2
-=)
+# Домашнее задание к занятию «Базовые объекты K8S»
+
+### Цель задания
+
+В тестовой среде для работы с Kubernetes, установленной в предыдущем ДЗ, необходимо развернуть Pod с приложением и подключиться к нему со своего локального компьютера. 
+
+------
+
+### Чеклист готовности к домашнему заданию
+
+1. Установленное k8s-решение (например, MicroK8S).
+2. Установленный локальный kubectl.
+3. Редактор YAML-файлов с подключенным Git-репозиторием.
+
+------
+
+### Инструменты и дополнительные материалы, которые пригодятся для выполнения задания
+
+1. Описание [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) и примеры манифестов.
+2. Описание [Service](https://kubernetes.io/docs/concepts/services-networking/service/).
+
+------
+
+### Задание 1. Создать Pod с именем hello-world
+
+1. Создать манифест (yaml-конфигурацию) Pod.
+2. Использовать image - gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
+3. Подключиться локально к Pod с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+
+<img width="801" height="499" alt="image" src="https://github.com/user-attachments/assets/6150051e-2d8e-435c-8eb5-b01a684d298c" />
+
+  
+<img width="752" height="847" alt="image" src="https://github.com/user-attachments/assets/9795bf47-5900-468c-8826-9c51207c697b" />
+
+
+
+
+
+------
+
+### Задание 2. Создать Service и подключить его к Pod
+
+1. Создать Pod с именем netology-web.
+2. Использовать image — gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
+3. Создать Service с именем netology-svc и подключить к netology-web.
+4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+
+
+<img width="775" height="303" alt="image" src="https://github.com/user-attachments/assets/ea87cc07-a4de-48f9-8bf1-8f5d33ce6ab5" />
+
+<img width="770" height="530" alt="image" src="https://github.com/user-attachments/assets/d27c22a1-d963-41f1-b644-6000e9a952da" />
+
+<img width="756" height="838" alt="image" src="https://github.com/user-attachments/assets/d704bfab-7e06-43b1-a456-1cf9222cd001" />
+
+<img width="650" height="117" alt="image" src="https://github.com/user-attachments/assets/196604e8-a045-49be-80d0-ba13c39b440b" />
+
+
+
+------
+
+### Правила приёма работы
+
+1. Домашняя работа оформляется в своем Git-репозитории в файле README.md. Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
+2. Файл README.md должен содержать скриншоты вывода команд `kubectl get pods`, а также скриншот результата подключения.
+3. Репозиторий должен содержать файлы манифестов и ссылки на них в файле README.md.
+
+------
+
+### Критерии оценки
+Зачёт — выполнены все задания, ответы даны в развернутой форме, приложены соответствующие скриншоты и файлы проекта, в выполненных заданиях нет противоречий и нарушения логики.
+
+На доработку — задание выполнено частично или не выполнено, в логике выполнения заданий есть противоречия, существенные недостатки.
